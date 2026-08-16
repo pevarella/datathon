@@ -223,14 +223,4 @@ O MLflow pode rodar em ECS ou EC2, com RDS como backend transacional e S3 como a
 - O snapshot da API não recebe feedback; aprendizado online requer contrato de eventos, idempotência, persistência e rollback.
 - Próximos passos: A/B test com guardrails, propensity logging, avaliação off-policy, monitoramento por segmento, análise de equidade, autenticação e CI/CD.
 
-## Checklist das Etapas 0–7
 
-- [x] Etapa 0 — repositório organizado, requirements e README autocontido.
-- [x] Etapa 1 — fonte Kaggle e notebook de EDA executado.
-- [x] Etapa 2 — target binário, braços válidos, contexto minimizado e `duration` removida.
-- [x] Etapa 3 — baseline fixo, baseline global e Thompson Sampling; adaptativo acima do oficial.
-- [x] Etapa 4 — métricas, quatro gráficos, Golden Set com exatamente cinco casos e testes.
-- [x] Etapa 5 — FastAPI com `/health` e `/recommend`.
-- [x] Etapa 6 — arquitetura-alvo AWS documentada, sem provisionamento.
-- [x] Etapa 7 — experimento MLflow local com params, métricas e artefatos.
-- [x] Etapa 8 — vídeo, explicitamente fora do escopo desta entrega.
