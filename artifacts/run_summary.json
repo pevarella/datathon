@@ -1,0 +1,35 @@
+{
+  "dataset_file": "data\\raw\\bank-additional-full.csv",
+  "cleaning": {
+    "original_rows": 41188,
+    "usable_rows": 41188,
+    "unknown_or_unsupported_contact_rows_removed": 0,
+    "invalid_required_rows_removed": 0,
+    "duration_removed": true,
+    "target_source_column": "y",
+    "arms": [
+      "cellular",
+      "telephone"
+    ],
+    "segments": 6
+  },
+  "train_rows": 32950,
+  "test_rows": 8238,
+  "overall_conversion": 0.11265417111780131,
+  "conversion_by_contact": {
+    "cellular": 0.14737607099143207,
+    "telephone": 0.05231321457059293
+  },
+  "rows_by_contact": {
+    "cellular": 26144,
+    "telephone": 15044
+  },
+  "conversion_by_poutcome": {
+    "failure": 0.1422859830667921,
+    "nonexistent/other": 0.08832213255349661,
+    "success": 0.651128914785142
+  },
+  "used_interactions": 50000,
+  "generated_at": "2026-08-15T23:09:10.156289+00:00",
+  "mlflow_run_id": "c2b556c4d439457eb0422d7ec87fb85e"
+}

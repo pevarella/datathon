@@ -1,0 +1,168 @@
+{
+  "policy": "contextual_thompson_sampling",
+  "policy_version": "1.0.0",
+  "serving_rule": "posterior_mean_argmax",
+  "dataset_slug": "henriqueyamahata/bank-marketing",
+  "generated_at": "2026-08-15T23:09:10.156289+00:00",
+  "bandit_state": {
+    "arms": [
+      "cellular",
+      "telephone"
+    ],
+    "alpha_prior": 1.0,
+    "beta_prior": 1.0,
+    "min_segment_observations": 5,
+    "seed": 42,
+    "global_posteriors": {
+      "cellular": {
+        "alpha": 3031.0,
+        "beta": 17858.0,
+        "observations": 20887
+      },
+      "telephone": {
+        "alpha": 615.0,
+        "beta": 11450.0,
+        "observations": 12063
+      }
+    },
+    "segment_posteriors": {
+      "poutcome=failure|previous=gt0|campaign=1-2": {
+        "cellular": {
+          "alpha": 365.0,
+          "beta": 2128.0,
+          "observations": 2491
+        },
+        "telephone": {
+          "alpha": 25.0,
+          "beta": 132.0,
+          "observations": 155
+        }
+      },
+      "poutcome=failure|previous=gt0|campaign=3+": {
+        "cellular": {
+          "alpha": 93.0,
+          "beta": 577.0,
+          "observations": 668
+        },
+        "telephone": {
+          "alpha": 7.0,
+          "beta": 80.0,
+          "observations": 85
+        }
+      },
+      "poutcome=nonexistent/other|previous=0|campaign=1-2": {
+        "cellular": {
+          "alpha": 1422.0,
+          "beta": 10028.0,
+          "observations": 11448
+        },
+        "telephone": {
+          "alpha": 367.0,
+          "beta": 7236.0,
+          "observations": 7601
+        }
+      },
+      "poutcome=nonexistent/other|previous=0|campaign=3+": {
+        "cellular": {
+          "alpha": 504.0,
+          "beta": 4771.0,
+          "observations": 5273
+        },
+        "telephone": {
+          "alpha": 173.0,
+          "beta": 3973.0,
+          "observations": 4144
+        }
+      },
+      "poutcome=success|previous=gt0|campaign=1-2": {
+        "cellular": {
+          "alpha": 540.0,
+          "beta": 283.0,
+          "observations": 821
+        },
+        "telephone": {
+          "alpha": 37.0,
+          "beta": 26.0,
+          "observations": 61
+        }
+      },
+      "poutcome=success|previous=gt0|campaign=3+": {
+        "cellular": {
+          "alpha": 112.0,
+          "beta": 76.0,
+          "observations": 186
+        },
+        "telephone": {
+          "alpha": 11.0,
+          "beta": 8.0,
+          "observations": 17
+        }
+      }
+    }
+  },
+  "reward_probabilities": {
+    "poutcome=failure|previous=gt0|campaign=1-2": {
+      "cellular": 0.14640994785399117,
+      "telephone": 0.1592356687898089
+    },
+    "poutcome=failure|previous=gt0|campaign=3+": {
+      "cellular": 0.13880597014925372,
+      "telephone": 0.08045977011494253
+    },
+    "poutcome=nonexistent/other|previous=0|campaign=1-2": {
+      "cellular": 0.12419213973799127,
+      "telephone": 0.048270419571221884
+    },
+    "poutcome=nonexistent/other|previous=0|campaign=3+": {
+      "cellular": 0.09554502369668247,
+      "telephone": 0.041726965750120595
+    },
+    "poutcome=success|previous=gt0|campaign=1-2": {
+      "cellular": 0.6561360874848117,
+      "telephone": 0.5873015873015873
+    },
+    "poutcome=success|previous=gt0|campaign=3+": {
+      "cellular": 0.5957446808510638,
+      "telephone": 0.5789473684210527
+    }
+  },
+  "global_reward_probabilities": {
+    "cellular": 0.1451002920197233,
+    "telephone": 0.050973891421467056
+  },
+  "segment_definition": {
+    "poutcome": [
+      "success",
+      "failure",
+      "nonexistent/other"
+    ],
+    "previous": [
+      "0",
+      "gt0"
+    ],
+    "campaign": [
+      "1-2",
+      "3+"
+    ]
+  },
+  "metrics": {
+    "baseline_fixed_policy": "always_telephone",
+    "baseline_best_arm": "cellular",
+    "baseline_fixed_conversion": 0.07574,
+    "baseline_best_arm_conversion": 0.13574,
+    "adaptive_conversion": 0.13764,
+    "lift_absolute": 0.06190000000000001,
+    "lift_percent": 81.72696065487195,
+    "baseline_fixed_cumulative_reward": 3787,
+    "baseline_best_arm_cumulative_reward": 6787,
+    "adaptive_cumulative_reward": 6882,
+    "oracle_cumulative_reward": 6884,
+    "cumulative_regret": 18.456403931495508,
+    "arm_selection_distribution": {
+      "cellular": 0.91844,
+      "telephone": 0.08156
+    },
+    "n_interactions": 50000,
+    "seed": 42
+  }
+}

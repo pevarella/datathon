@@ -1,0 +1,6 @@
+case_id,poutcome,previous,campaign,segment,recommended_action,estimated_conversion,alternative_action,alternative_estimated_conversion,rationale
+GS-001,success,1,1,poutcome=success|previous=gt0|campaign=1-2,cellular,0.6561360874848117,telephone,0.5873015873015873,A recomendação está alinhada à maior taxa suavizada do segmento (65.61% vs. 58.73%).
+GS-002,failure,1,2,poutcome=failure|previous=gt0|campaign=1-2,telephone,0.1592356687898089,cellular,0.14640994785399117,A recomendação está alinhada à maior taxa suavizada do segmento (15.92% vs. 14.64%).
+GS-003,nonexistent,0,1,poutcome=nonexistent/other|previous=0|campaign=1-2,cellular,0.12419213973799127,telephone,0.048270419571221884,A recomendação está alinhada à maior taxa suavizada do segmento (12.42% vs. 4.83%).
+GS-004,nonexistent,0,4,poutcome=nonexistent/other|previous=0|campaign=3+,cellular,0.09554502369668247,telephone,0.041726965750120595,A recomendação está alinhada à maior taxa suavizada do segmento (9.55% vs. 4.17%).
+GS-005,failure,0,3,poutcome=failure|previous=0|campaign=3+,cellular,0.1451002920197233,telephone,0.050973891421467056,Segmento sem histórico suficiente; recomendação baseada no fallback global (14.51% vs. 5.10%).

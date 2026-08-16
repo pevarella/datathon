@@ -1,0 +1,20 @@
+{
+  "baseline_fixed_policy": "always_telephone",
+  "baseline_best_arm": "cellular",
+  "baseline_fixed_conversion": 0.07574,
+  "baseline_best_arm_conversion": 0.13574,
+  "adaptive_conversion": 0.13764,
+  "lift_absolute": 0.06190000000000001,
+  "lift_percent": 81.72696065487195,
+  "baseline_fixed_cumulative_reward": 3787,
+  "baseline_best_arm_cumulative_reward": 6787,
+  "adaptive_cumulative_reward": 6882,
+  "oracle_cumulative_reward": 6884,
+  "cumulative_regret": 18.456403931495508,
+  "arm_selection_distribution": {
+    "cellular": 0.91844,
+    "telephone": 0.08156
+  },
+  "n_interactions": 50000,
+  "seed": 42
+}
