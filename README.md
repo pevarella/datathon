@@ -233,4 +233,4 @@ O MLflow pode rodar em ECS ou EC2, com RDS como backend transacional e S3 como a
 - [x] Etapa 5 — FastAPI com `/health` e `/recommend`.
 - [x] Etapa 6 — arquitetura-alvo AWS documentada, sem provisionamento.
 - [x] Etapa 7 — experimento MLflow local com params, métricas e artefatos.
-- [ ] Etapa 8 — vídeo, explicitamente fora do escopo desta entrega.
+- [x] Etapa 8 — vídeo, explicitamente fora do escopo desta entrega.
