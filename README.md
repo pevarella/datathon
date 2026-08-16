@@ -1,4 +1,4 @@
-# Datathon MLET — Decisão Adaptativa de Canais
+# Datathon MLET7 — Decisão Adaptativa de Canais
 
 Plataforma end-to-end que recomenda `cellular` ou `telephone` para uma oportunidade de contato. A entrega compara o baseline determinístico `always_telephone` com Thompson Sampling contextual por segmentos, persiste uma política explicável, expõe uma API FastAPI e registra o experimento no MLflow local.
 
